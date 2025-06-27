@@ -21,9 +21,8 @@ This is a simple yet powerful web app that scrapes job listings from LinkedIn us
 
 | Search Page | Results Page |
 |-------------|--------------|
-| ![Search Page](static/img/Screenshot(77).png) | ![Results Page](static/img/Screenshot(78).png) |
+| ![Search Page](https://raw.githubusercontent.com/suryanshdubey20/Linkedin-job-scraper/main/static/img/Screenshot%20(7).png) | ![Results Page](https://raw.githubusercontent.com/suryanshdubey20/Linkedin-job-scraper/main/static/img/Screenshot%20(7).png) |
 
-> *(Add screenshots to `static/img/` and rename as above to show preview)*
 
 ---
 
