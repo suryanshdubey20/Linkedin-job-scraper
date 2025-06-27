@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedIn Job Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        #loader-wrapper {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #form-container.loading {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        #loading-text {
+            font-size: 18px;
+            color: #3498db;
+            margin-top: 15px;
+        }
+
+        #spinner-img {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Search LinkedIn Jobs</h2>
+
+    <div id="form-container">
+        <form action="/results" method="post" onsubmit="showLoader()">
+            <label>Job Title:</label><br>
+            <input type="text" name="keyword" required><br><br>
+            
+            <label>Location:</label><br>
+            <input type="text" name="location" required><br><br>
+            
+            <label>Number of Jobs:</label><br>
+            <input type="number" name="max_jobs" value="10" min="1" max="50"><br><br>
+            
+            <button type="submit">Search Jobs</button>
+        </form>
+    </div>
+
+    <!-- Fancy loader -->
+    <div id="loader-wrapper">
+        <img id="spinner-img" src="{{ url_for('static', filename='img/spinner.gif') }}" alt="Loading...">
+        <div id="loading-text">Scraping jobs, please wait...</div>
+    </div>
+
+    <script>
+        function showLoader() {
+            document.getElementById('form-container').classList.add('loading');
+            document.getElementById('loader-wrapper').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+
