@@ -21,7 +21,7 @@ This is a simple yet powerful web app that scrapes job listings from LinkedIn us
 
 | Search Page | Results Page |
 |-------------|--------------|
-| ![Search Page](static/img/screenshot1.png) | ![Results Page](static/img/screenshot2.png) |
+| ![Search Page](static/img/Screenshot(77).png) | ![Results Page](static/img/Screenshot(78).png) |
 
 > *(Add screenshots to `static/img/` and rename as above to show preview)*
 
